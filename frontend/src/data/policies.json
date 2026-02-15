@@ -1,0 +1,127 @@
+[
+    {
+        "id": "pm-kisan",
+        "title": "PM-KISAN Scheme",
+        "category": "Welfare Schemes",
+        "description": "Financial assistance of ₹6,000 per year for landholding farmer families.",
+        "details": {
+            "eligibility": [
+                "Landholding farmer families with cultivable land.",
+                "Must be an Indian citizen.",
+                "Aadhaar card linked to bank account is mandatory.",
+                "Excludes institutional landholders, government employees, and income tax payers."
+            ],
+            "benefits": "₹6,000 per year in three equal installments of ₹2,000 each.",
+            "process": [
+                "Register online at pmkisan.gov.in or via PM-KISAN GoI Mobile App.",
+                "Visit nearest Common Service Centres (CSCs).",
+                "e-KYC is mandatory for receiving installments."
+            ],
+            "documents": [
+                "Aadhaar Card",
+                "Proof of Citizenship",
+                "Land Ownership Papers",
+                "Bank Account Details"
+            ]
+        }
+    },
+    {
+        "id": "ayushman-bharat",
+        "title": "Ayushman Bharat (PM-JAY)",
+        "category": "Welfare Schemes",
+        "description": "Health insurance coverage of up to ₹5 lakh per family per year for secondary and tertiary care.",
+        "details": {
+            "eligibility": [
+                "Based on SECC 2011 data.",
+                "Rural: Families in single-room dwellings, SC/ST households, landless laborers.",
+                "Urban: 11 occupational categories like street vendors, ragpickers, domestic workers.",
+                "No restriction on family size, age, or gender."
+            ],
+            "benefits": "Cashless cover up to ₹5 lakh/year for hospitalization, including COVID-19 treatment.",
+            "process": [
+                "Check eligibility at pmjay.gov.in or call 14555.",
+                "Identify at empanelled hospital with Aadhaar or Ration Card.",
+                "Receive Ayushman Card for cashless treatment."
+            ],
+            "documents": [
+                "Aadhaar Card",
+                "Ration Card",
+                "Mobile Number"
+            ]
+        }
+    },
+    {
+        "id": "pmay-urban",
+        "title": "Pradhan Mantri Awas Yojana (Urban)",
+        "category": "Land & Property",
+        "description": "Affordable housing for urban poor with interest subsidies.",
+        "details": {
+            "eligibility": [
+                "EWS (Income up to ₹3L), LIG (₹3L-₹6L), MIG (₹6L-₹18L).",
+                "Family must not own a pucca house anywhere in India.",
+                "Valid Aadhaar Card is mandatory."
+            ],
+            "benefits": [
+                "Interest subsidy up to 6.5% on home loans.",
+                "Central assistance of ₹1.5 lakh for new construction (EWS).",
+                "Subsidy on principal amount for LIG/MIG categories."
+            ],
+            "process": [
+                "Apply online via pmaymis.gov.in or at Common Service Centres.",
+                "Track status using assessment ID.",
+                "Bank loan application for CLSS subsidy."
+            ],
+            "documents": [
+                "Aadhaar",
+                "Income Proof (Salary Slip/ITR)",
+                "Bank Statement",
+                "Property Documents"
+            ]
+        }
+    },
+    {
+        "id": "land-records",
+        "title": "Land Records & Registration",
+        "category": "Land & Property",
+        "description": "Digital access to land records (RoR) and property registration.",
+        "details": {
+            "eligibility": [
+                "Any citizen or landowner."
+            ],
+            "benefits": "Transparency in land ownership, easier loan approvals, and dispute resolution.",
+            "process": [
+                "Visit state-specific land record portal (e.g., Bhulekh).",
+                "Enter District, Tehsil, and Village details.",
+                "View/Download RoR (Rights of Record)."
+            ],
+            "documents": [
+                "Khasra/Khatauni Number",
+                "Owner Name"
+            ]
+        }
+    },
+    {
+        "id": "domicile-cert",
+        "title": "Domicile & Income Certificates",
+        "category": "Citizen Services",
+        "description": "Proof of residence and income for educational and job purposes.",
+        "details": {
+            "eligibility": [
+                "Resident of the state for a specified period (usually 3-15 years)."
+            ],
+            "benefits": "Required for state quota in education, jobs, and scholarship schemes.",
+            "process": [
+                "Apply via e-District portal or local Tehsildar office.",
+                "Submit proof of residence and identity.",
+                "Verification by Patwari/Revenue Officer."
+            ],
+            "documents": [
+                "Aadhaar",
+                "Ration Card",
+                "Electricity Bill",
+                "Birth Certificate",
+                "Passport Size Photo"
+            ]
+        }
+    }
+]

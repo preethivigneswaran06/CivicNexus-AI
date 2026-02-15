@@ -1,0 +1,26 @@
+[
+    {
+        "complaint_id": "CMP-2023-8891",
+        "query": "No water supply in Sector 4 since yesterday",
+        "department": "Water Supply",
+        "urgency": "High",
+        "status": "Resolved",
+        "date": "2023-10-12"
+    },
+    {
+        "complaint_id": "CMP-2023-8892",
+        "query": "Street light blinking in front of House 22",
+        "department": "Electricity",
+        "urgency": "Low",
+        "status": "In Progress",
+        "date": "2023-10-14"
+    },
+    {
+        "complaint_id": "CMP-2023-8893",
+        "query": "Garbage not picked up for 3 days",
+        "department": "Sanitation",
+        "urgency": "Medium",
+        "status": "Pending",
+        "date": "2023-10-15"
+    }
+]

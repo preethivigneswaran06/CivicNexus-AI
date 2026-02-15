@@ -1,0 +1,35 @@
+[
+    {
+        "citizen_id": "CIT-001",
+        "name": "Rajesh Kumar",
+        "age": 65,
+        "literacy_level": "Medium",
+        "tech_savvy": "Low",
+        "preferred_language": "English",
+        "tags": [
+            "Senior Citizen"
+        ]
+    },
+    {
+        "citizen_id": "CIT-002",
+        "name": "Sunita Devi",
+        "age": 42,
+        "literacy_level": "Low",
+        "tech_savvy": "Low",
+        "preferred_language": "English",
+        "tags": [
+            "Low Literacy"
+        ]
+    },
+    {
+        "citizen_id": "CIT-003",
+        "name": "Amit Patel",
+        "age": 28,
+        "literacy_level": "High",
+        "tech_savvy": "High",
+        "preferred_language": "English",
+        "tags": [
+            "Digital Native"
+        ]
+    }
+]
