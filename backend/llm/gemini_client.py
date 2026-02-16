@@ -1,5 +1,4 @@
 import os
-import google.generativeai as genai
 from dotenv import load_dotenv
 import time
 import random
@@ -8,16 +7,30 @@ load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 MOCK_MODE = False
+genai = None
 
-if GEMINI_API_KEY:
-    try:
-        genai.configure(api_key=GEMINI_API_KEY)
-    except Exception as e:
-        print(f"Error configuring Gemini: {e}. Switching to Mock Mode.")
-        MOCK_MODE = True
-else:
-    print("Warning: GEMINI_API_KEY not found. Switching to Mock Mode.")
-    MOCK_MODE = True
+def _get_genai_model():
+    global genai, MOCK_MODE
+    
+    if MOCK_MODE:
+        return None
+
+    if genai is None:
+        try:
+            import google.generativeai as lib
+            genai = lib
+            if GEMINI_API_KEY:
+                genai.configure(api_key=GEMINI_API_KEY)
+            else:
+                print("Warning: GEMINI_API_KEY not found. Switching to Mock Mode.")
+                MOCK_MODE = True
+                return None
+        except Exception as e:
+            print(f"Error importing/configuring Gemini: {e}. Switching to Mock Mode.")
+            MOCK_MODE = True
+            return None
+            
+    return genai
 
 # Using Gemini 1.5 Flash for speed and efficiency
 MODEL_NAME = "gemini-1.5-flash"
@@ -38,6 +51,9 @@ def generate_mock_response(prompt: str):
         return "I am your CivicNexus Assistant. I can help you file complaints, check policies, or verify documents. How can I assist you today?"
 
 def generate_content(prompt: str):
+    # Ensure genai is initialized
+    _get_genai_model()
+
     if MOCK_MODE:
         return generate_mock_response(prompt)
         
